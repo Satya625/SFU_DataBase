@@ -21,7 +21,7 @@ WHERE ft.TransactionDate = (
 SELECT m.FirstName, m.LastName
 FROM Members m
 LEFT JOIN Account a ON m.MemberID = a.MemberID
-LEFT JOIN FinancialTransactions ft ON a.AccountID = ft.AccountID
+LEFT JOIN Transaction ft ON a.AccountID = ft.AccountID
 WHERE ft.TransactionID IS NULL;
 
 -- Query 5: Find the average balance for each account type:
