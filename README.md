@@ -1,2 +1,2 @@
 # SFU_DataBase
-A Basic project to handle data and transactions of a Self Finance Union Members
+The Finance Union Database Management System project is designed to manage member information, accounts, transactions, and administrative tasks using a relational database. The schema includes tables for Members, Account, FinancialTransactions, MembershipStatus, and Admin. The system offers queries for listing members, calculating total balances, finding the latest transactions, identifying members with no transactions, computing average balances, ranking top members, counting transactions per account type, and more. Future development could involve implementing a JavaFX frontend for a user-friendly interface.
