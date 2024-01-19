@@ -1,5 +1,5 @@
 -- Inserting data into the FinancialTransactions table with four-digit TransactionID
-INSERT INTO FinancialTransactions (TransactionID, AccountID, TransactionType, Status, Amount, TransactionDate)
+INSERT INTO Transaction (TransactionID, AccountID, TransactionType, Status, Amount, TransactionDate)
 VALUES
 (1001, 10001, 'Deposit', 'SUCCESS', 1000.00, '2022-01-01'),
 (1002, 10002, 'Withdrawal', 'SUCCESS', 500.00, '2022-01-02'),
