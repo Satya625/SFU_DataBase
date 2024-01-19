@@ -10,10 +10,10 @@ GROUP BY AccountType;
 -- Query 3: Find the latest transaction for each account:
 SELECT a.AccountID, a.AccountType, ft.TransactionType, ft.Amount, ft.TransactionDate
 FROM Account a
-LEFT JOIN FinancialTransactions ft ON a.AccountID = ft.AccountID
+LEFT JOIN Transaction ft ON a.AccountID = ft.AccountID
 WHERE ft.TransactionDate = (
     SELECT MAX(TransactionDate)
-    FROM FinancialTransactions
+    FROM Transaction
     WHERE AccountID = a.AccountID
 );
 
