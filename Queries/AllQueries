@@ -33,7 +33,7 @@ GROUP BY AccountType;
 SELECT m.FirstName, m.LastName, SUM(ft.Amount) AS TotalTransactionAmount
 FROM Members m
 JOIN Account a ON m.MemberID = a.MemberID
-JOIN FinancialTransactions ft ON a.AccountID = ft.AccountID
+JOIN Transaction ft ON a.AccountID = ft.AccountID
 GROUP BY m.MemberID
 ORDER BY TotalTransactionAmount DESC
 LIMIT 5;
@@ -41,7 +41,7 @@ LIMIT 5;
 -- Query 7: Find the number of transactions per account type:
 SELECT a.AccountType, COUNT(ft.TransactionID) AS TransactionCount
 FROM Account a
-LEFT JOIN FinancialTransactions ft ON a.AccountID = ft.AccountID
+LEFT JOIN Transaction ft ON a.AccountID = ft.AccountID
 GROUP BY a.AccountType;
 
 -- Query 8: List members who have a balance greater than the average balance:
@@ -56,7 +56,7 @@ WHERE a.Balance > (
 -- Query 9: Retrieve the earliest and latest transaction dates for each account:
 SELECT a.AccountID, MIN(ft.TransactionDate) AS EarliestTransaction, MAX(ft.TransactionDate) AS LatestTransaction
 FROM Account a
-LEFT JOIN FinancialTransactions ft ON a.AccountID = ft.AccountID
+LEFT JOIN Transaction ft ON a.AccountID = ft.AccountID
 GROUP BY a.AccountID;
 
 -- Query 10: List members who have the same last name and different first names:
