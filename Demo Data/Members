@@ -1,0 +1,19 @@
+-- Inserting data into the Members table
+INSERT INTO Members (MemberID, FirstName, LastName, Address, Password, ContactNumber, Email, StatusID)
+VALUES
+(1, 'Sri Krishna Chaitanya', 'Talasila', 'miyapur', '1234', '1234567890', 'dbms@gmail.com', 1),
+(2, 'Samith', 'Tipirisetty', 'VNR VJIET hostel', '1234', '1234567891', 'dbms@gmail.com', 2),
+(3, 'Sandeep', 'Uchantla', 'Secunderabad', '1234', '1234567892', 'dbms@gmail.com', 1),
+(4, 'Aniketh', 'Tirupatae', 'Kairathabad', '1234', '1234567893', 'dbms@gmail.com', 2),
+(5, 'Aditya', 'Sai Ram', 'VNR VJIET hostel', '1234', '1234567894', 'dbms@gmail.com', 1),
+(6, 'Sathwick', 'Ram', 'VNR VJIET hostel', '1234', '1234567895', 'dbms@gmail.com', 2),
+(7, 'Vamshi', 'T', 'VNR VJIET hostel', '1234', '1234567896', 'dbms@gmail.com', 1),
+(8, 'Pavan', 'Varigala', 'VNR VJIET hostel', '1234', '1234567897', 'dbms@gmail.com', 2),
+(9, 'Arjun', 'Reddy', 'VNR VJIET hostel', '1234', '1234567898', 'dbms@gmail.com', 1),
+(10, 'Akhil', 'Sai Teja', 'VNR VJIET hostel', '1234', '1234567899', 'dbms@gmail.com', 2),
+(11, 'Sai Sushanth', 'T', 'Secunderabad', '1234', '1234567900', 'dbms@gmail.com', 1),
+(12, 'Hari', 'Lekkala', 'KPHB', '1234', '1234567901', 'dbms@gmail.com', 2),
+(13, 'Srineel', 'Reddy', 'JNTU', '1234', '1234567902', 'dbms@gmail.com', 1),
+(14, 'Hemanth', 'kumar', 'Dilshukhnagar', '1234', '1234567903', 'dbms@gmail.com', 2),
+(15, 'Srujan', 'Sohan', 'Patancheru', '1234', '1234567904', 'dbms@gmail.com', 1),
+(16, 'Mayan', 'Brahmam', 'VNR VJIET hostel', '1234', '1234567905', 'dbms@gmail.com', 2);
